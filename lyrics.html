@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="images/jpg" href="images/oasis_logo.jpg">
+        <title>My Song Lyrics</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <div id="box1">
+            <h3 style="color: white;">oasis</h3>
+        </div>
+        <h1>Don't Look Back In Anger</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#aboutOasis">About</a></li>
+                <li><a href="#audio">Audio</a></li>
+                <li><a href="#lyrics">Lyrics</a></li>
+                <li><a href="#music-video">Music Video</a></li>
+            </ul>
+        </nav>
+        <hr><br>
+        <button id="aboutOasis" onClick="showDiv()"style="font-size:15px; color:white">
+            About Oasis
+        </button>
+        <div id="myDiv" style="display:none; color:white">
+            Oasis are an English rock band formed in Manchester in 1991. The group initially consisted of Liam Gallagher (lead vocals), Paul "Bonehead" Arthurs (guitar), Paul "Guigsy" McGuigan (bass guitar) and Tony McCarroll (drums). Liam asked his older brother Noel Gallagher (lead guitar, vocals) to join as a fifth member a few months later to finalise their formation. Noel became the de facto leader of the group and took over the songwriting duties for the band's first four albums. They are regarded as the most globally successful group of the Britpop era and one of the most influential rock bands of all time.
+        </div>
+        <script>
+            function showDiv(){
+                document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
+        <a target="_blank" href="https://www.youtube.com/watch?v=r8OipmKFDeM">
+        <img id="album-cover" src="images/album_cover.jpeg"
+        height="200"
+        alt="Album cover of the song">
+        <br>
+        </a>
+        <ul>
+            <li>Genre: Britpop</li>
+            <li>Album: (What's the story) Morning Glory?</li>
+            <li>Released: 1995</li>
+            <li>Lyrics by: Liam Gallagher</li>
+            <li>Music by: Noel Gallagher</li>
+        </ul>
+        <div class="dropdown">
+            <button>Versions</button>
+            <div class="content">
+                <a target="_blank" href="https://www.youtube.com/watch?v=r8OipmKFDeM">Original Song</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=MpNHqJs7rXQ">Live River Plate Argentina 2014</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=FDnb8iReEl0">Live Wembley 2008</a>
+            </div>
+        </div>
+
+        <br><br>
+        <hr>
+        <br>
+
+        <audio controls id="audio">
+            <source src="audios/Oasis - Don't Look Back In Anger (Official Video).mp3" type="audio/mpeg">
+        </audio>
+
+        <br><hr>
+
+        <pre id="lyrics">
+            Slip inside the eye of your mind
+            Don't you know you might find
+            A better place to play?
+            You said that you'd never been
+            But all the things that you've seen
+            Will slowly fade away
+            
+            So I start a revolution from my bed
+            'Cause you said the brains I had went to my head
+            Step outside, summertime's in bloom
+            Stand up beside the fireplace
+            Take that look from off your face
+            You ain't ever gonna burn my heart out
+            
+            And so, Sally can wait
+            She knows it's too late as we're walkin' on by
+            Her soul slides away
+            "But don't look back in anger," I heard you say
+            
+            Take me to the place where you go
+            Where nobody knows
+            If it's night or day
+            Please don't put your life in the hands
+            Of a rock 'n' roll band
+            Who'll throw it all away
+            
+            I'm gonna start a revolution from my bed
+            'Cause you said the brains I had went to my head
+            Step outside, 'cause summertime's in bloom
+            Stand up beside the fireplace
+            Take that look from off your face
+            'Cause you ain't ever gonna burn my heart out
+            
+            And so, Sally can wait
+            She knows it's too late as she's walking on by
+            My soul slides away
+            "But don't look back in anger," I heard you say
+
+            So, Sally can wait
+            She knows it's too late as we're walking on by
+            Her soul slides away
+            "But don't look back in anger," I heard you say
+            So, Sally can wait
+            She knows it's too late as she's walking on by
+            My soul slides away
+            "But don't look back in anger
+            Don't look back in anger," I heard you say
+        </pre>
+
+        <hr>
+
+        <div id="music-video">
+            <h3>Music Video</h3>
+        </div>
+        <video id="video" width="400px" controls>
+            <source src="videos/Oasis - Don't Look Back In Anger (Official Video).mp4">
+        </video>
+        <br>
+        <hr>
+        <button id="SongRec" onclick="doSomething()" style="font-size:25px; background-color:lightblue; border-radius:25px;">
+            Song Recommendation?
+        </button>
+
+        <p id="SongRecHere">Wait...!</p>
+
+        <script>
+            function doSomething(){
+                document.getElementById("SongRecHere").innerHTML = "She's Electric by Oasis";
+            }
+        </script>
+
+        <hr>
+        <a target="_blank" href="guestbook.html">
+            <button id="Guestbook" style="font-size:20px; background-color:lightgreen">
+                Guestbook
+            </button>
+        </a>
+    </body>
+</html>
